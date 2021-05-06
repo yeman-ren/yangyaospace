@@ -1,5 +1,7 @@
 package com.yy.dao;
 
+import com.yy.pojo.User;
+
 import java.util.List;
 
 public interface IUserDao {
