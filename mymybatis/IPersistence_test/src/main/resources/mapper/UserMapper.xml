@@ -1,0 +1,9 @@
+<mapper namespace="com.yy.dao.IUserDao">
+
+    <select id="findAll" resultType="com.yy.pojo.User">
+        select * from user
+    </select>
+
+
+
+</mapper>
