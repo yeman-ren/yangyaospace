@@ -5,12 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.yy</groupId>
-    <artifactId>IPersistence_test</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>IPersustence</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>IPersistence</module>
-    </modules>
 
 
 </project>
