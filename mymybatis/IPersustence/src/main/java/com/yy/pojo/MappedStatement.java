@@ -1,5 +1,11 @@
 package com.yy.pojo;
 
+/**
+ *  存放每条sql语句所有的内容
+ *  包含 id标识 返回值类型   参数值类型 sql语句
+ * @author: yangyao
+ * @since 2021/5/7
+ */
 public class MappedStatement {
 
     //id标识

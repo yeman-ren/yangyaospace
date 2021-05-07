@@ -4,6 +4,22 @@
         select * from user
     </select>
 
+    <select id="findOne" resultType="com.yy.pojo.User" paramterType="java.lang.Long">
+        select * from user where id = #{id}
+    </select>
 
 
+    <insert id="addOne" paramterType= "com.yy.pojo.User">
+        insert into user(id,username) values(#{id},#{username})
+    </insert>
+
+    <delete id="delOne" paramterType="java.lang.Long">
+        delete from user where id = #{id}
+    </delete>
+
+    <update id="updateOne">
+        update user
+        set username = #{username}
+        where id=#{id}
+    </update>
 </mapper>

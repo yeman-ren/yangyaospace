@@ -6,7 +6,9 @@ import java.util.Map;
 
 public class Configuration {
 
-    //数据库的4个配置
+    /**
+     * 数据库的4个配置
+     */
     private DataSource dataSource;
 
     /**
