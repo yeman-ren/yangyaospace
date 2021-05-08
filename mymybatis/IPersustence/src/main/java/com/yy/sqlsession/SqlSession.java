@@ -20,4 +20,12 @@ public interface SqlSession {
      * @param params 入参
      */
     <E> List<E> selectList(String statementid, Object... params) throws Exception;
+
+    /**
+     * 为Dao接口生成代理实现类
+     * @param mapperClass
+     * @param <T>
+     * @return
+     */
+    public <T> T getMapper(Class<?> mapperClass);
 }
