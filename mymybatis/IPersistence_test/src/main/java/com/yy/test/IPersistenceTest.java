@@ -22,13 +22,15 @@ public class IPersistenceTest {
 
     @Test
     public void testIPersistence() throws Exception {
-        //读取配置文件，转为inputStream流
+        //一、读取配置文件，转为inputStream流
         InputStream inputStream = Resources.getResourceAsSteam("src/main/resources/config/SqlMapConfig.xml");
 
-        //获取sqlSessionFactory工厂
+        //二、通过SqlSessionFactoryBuilder解析数据库配置文件，并封装到DefaultSqlSessionFactory中
+        // 获取sqlSessionFactory工厂
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
 
-        //获取sqlSession
+        //三、获取DefaultSqlSession，返回其实现的接口SqlSession
+        // DefaultSqlSession中
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
         //1查询sql

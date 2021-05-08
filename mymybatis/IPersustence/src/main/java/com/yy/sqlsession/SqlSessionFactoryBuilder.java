@@ -8,7 +8,7 @@ import java.beans.PropertyVetoException;
 import java.io.InputStream;
 
 /**
- * SqlSessionFactory构造器
+ * SqlSessionFactory构造器,用来解析配置文件，封装在SqlSessionFactory工厂中
  * @since 2021/5/6
  */
 public class SqlSessionFactoryBuilder {
